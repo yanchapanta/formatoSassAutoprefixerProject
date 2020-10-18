@@ -1,0 +1,34 @@
+@import 'values';
+@import 'mixins';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    ul{
+        display: flex;
+    }
+}
+
+
+.items{
+
+    width: 100%;
+
+    background-color: rgb(103, 150, 150);
+
+    @include tablet(){
+        width: 90%;
+        margin: auto;
+    }
+    @include desktop(){
+        width: 80%;
+        margin: auto;
+    }
+}
